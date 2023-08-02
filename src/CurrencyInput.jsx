@@ -1,6 +1,13 @@
-const CurrencyInput = () =>{
-	return <div><input type="text" value={1}/>
-		<select name="" id=""></select>
+import './currencyInput.css';
+
+const CurrencyInput = (props) =>{
+	return <div className="group">
+		<input type="text" value={props.amount}  />
+		<select value={props.currency} >
+			{props.currencies.map((currency => (
+				<option value={currency}>{currency}</option>
+			)))}
+		</select>
 	</div>
 }
 

@@ -6,13 +6,17 @@
     grid-template-columns: 100px 80px;
     border-radius: 15px;
 }
-input,select{
+input, select{
     background: none;
     border:0;
     color:#fff;
+
 }
 input{
     padding-left: 10px;
+}
+input:focus{
+    outline: none;
 }
 select{
     padding: 15px;
