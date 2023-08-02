@@ -10,14 +10,19 @@ input, select{
     background: none;
     border:0;
     color:#fff;
-
 }
+
 input{
     padding-left: 10px;
 }
-input:focus{
+
+input:focus, select:focus{
     outline: none;
 }
 select{
     padding: 15px;
+}
+
+option{
+    color: black;
 }
